@@ -17,6 +17,68 @@ body {
 	all: unset;
 }
 
+/* Start Side NavBar */
+nav {
+	position: fixed;
+	top: 0;
+	left: 0;
+	min-width: 60px;
+	height: 100%;
+	background-color: #1a1a1a;
+
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+.logo {
+	font-size: 3rem;
+	font-family: 'Roboto', sans-serif;
+}
+
+.letterOne {
+	color: cyan;
+	position: absolute;
+	left: 15px;
+	transform: rotate(340deg);
+}
+
+.letterTwo {
+	color: rgb(241, 75, 103);
+	position: absolute;
+	left: 20px;
+	transform: rotate(340deg);
+}
+
+.icons {
+	position: relative;
+	top: 40vh;
+}
+
+.icons span {
+	display: block;
+	margin-top: 20px;
+}
+
+.material-icons {
+	color: gray;
+	opacity: .5;
+	font-size: 1.8rem;
+	cursor: pointer;
+	transition: .7s;
+}
+
+.material-icons:hover {
+	color: cyan;
+	opacity: 1;
+}
+
+.active {
+	color: cyan;
+	opacity: 1;
+}
+/* End Side NavBar */
+
 /* Start Header Section */
 header {
 	max-width: 100vw;
