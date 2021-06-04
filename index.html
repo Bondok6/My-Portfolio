@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>3-D Alphabet</title>
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css">
+        <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+        <link rel="stylesheet" href="style.css">
+
+        <style>
+            nav {
+                position: fixed;
+                top: 0;
+                left: 0;
+                min-width: 60px;
+                height: 100%;
+                background-color: #1A1A1A;
+
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+            }
+
+            .logo {
+                font-size: 3rem;
+                font-family: 'Roboto', sans-serif;
+            }
+
+            .letterOne {
+                color: cyan;
+                position: absolute;
+                left: 15px;
+                transform: rotate(340deg);
+            }
+
+            .letterTwo {
+                color: rgb(241, 75, 103);
+                position: absolute;
+                left: 20px;
+                transform: rotate(340deg);
+            }
+
+            .icons {
+                position: relative;
+                top: 40vh;
+            }
+
+            .icons span {
+                display: block;
+                margin-top: 20px;
+            }
+
+            .material-icons {
+                color: gray;
+                opacity: .5;
+                font-size: 1.8rem;
+                cursor: pointer;
+                transition: .7s;
+            }
+
+            .material-icons:hover {
+                color: cyan;
+                opacity: 1;
+            }
+
+            .active {
+                color: cyan;
+                opacity: 1;
+            }
+
+        </style>
+
+    </head>
+
+    <body>
+        <nav>
+            <div class="logo">
+                <span class="letterOne">k</span> <span class="letterTwo">k</span>
+            </div>
+            <div class="icons">
+                <span class="material-icons">home</span>
+                <span class="material-icons">account_circle</span>
+                <span class="material-icons">emoji_events</span>
+                <span class="material-icons">visibility</span>
+                <span class="material-icons">mail_outline</span>
+            </div>
+        </nav>
+
+        <header>
+            <span class="tag bodyTag">
+                &lt;body&gt;
+            </span>
+            <div class="container">
+                <div class="personal_info">
+                    <span class="tag h1Tag">
+                        &lt;h1&gt;
+                    </span>
+                    <h2>Hi,</h2>
+                    <h2>I'm <span class="letter_one">K</span><span class="letter_two">K</span><span
+                            class="others">yrillos
+                            Hany,</span>
+                    </h2>
+                    <h2>Front End Developer. <span class="tag h1CloseTag">&lt;/h1&gt;</span></h2>
+
+                    <button class="contactBtn"> contact me</button>
+                </div>
+                <div class="alpha">
+                    <div id="alpha1">k</div>
+                    <div id="alpha2">k</div>
+                </div>
+            </div>
+            <span class="tag bodyCloseTag">
+                &lt;/body&gt;
+            </span>
+        </header>
+
+
+        <script src="main.js"></script>
+    </body>
+
+</html>
