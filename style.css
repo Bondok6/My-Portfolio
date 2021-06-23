@@ -115,12 +115,10 @@ section {
 
 .personal_info .letter_one {
 	color: cyan;
-	font-weight: bolder;
 }
 
 .personal_info .letter_two {
 	color: rgb(241, 75, 103);
-	font-weight: bolder;
 	position: relative;
 	left: -28px;
 }
