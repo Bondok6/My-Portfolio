@@ -6,7 +6,7 @@
 }
 
 html {
-	/* scroll-behavior: smooth; */
+	scroll-behavior: smooth;
 }
 
 body {
@@ -96,6 +96,7 @@ main {
 
 section {
 	height: 100vh;
+	border: 1px solid transparent;
 }
 
 .personal_info {
@@ -142,6 +143,9 @@ section {
 
 	box-shadow: 5px 5px 10px #000;
 	animation: fadeInBottom linear 3s;
+
+	position: relative;
+	z-index: 1;
 }
 
 #alpha1 {

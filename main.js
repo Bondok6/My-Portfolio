@@ -151,3 +151,9 @@ requestAnimationFrame(function loop() {
 		particle.render(ctx);
 	}
 });
+
+// Contact Button
+const btn = document.querySelector('.contactBtn');
+btn.addEventListener('click', () => {
+	console.log('clicked');
+});
