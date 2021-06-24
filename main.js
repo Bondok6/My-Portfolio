@@ -80,20 +80,20 @@ Particle.prototype = {
 	}
 };
 
-var particles = [];
-var particle = null;
-var particleCount = 500;
-var tx = 0;
-var ty = HEIGHT / 2;
-var idx = 0;
-var temp = {
+const particles = [];
+const particle = null;
+const particleCount = 500;
+const tx = 0;
+const ty = HEIGHT / 2;
+const idx = 0;
+const temp = {
 	vx: Math.random() * 4 - 2,
 	vy: Math.random() * 4 - 2,
 	x: WIDTH / 2,
 	y: HEIGHT / 2
 };
 
-for (var i = 0; i < particleCount; i++) {
+for (let i = 0; i < particleCount; i++) {
 	particle = new Particle();
 	particles.push(particle);
 }
@@ -107,7 +107,7 @@ function spawn(target) {
 }
 
 c.addEventListener('mousemove', function(e) {
-	var rect = c.getBoundingClientRect();
+	const rect = c.getBoundingClientRect();
 	mouse.x = e.clientX - rect.left;
 	mouse.y = e.clientY - rect.top;
 	mouse.isMoved = true;
