@@ -224,6 +224,12 @@ section {
 	nav {
 		display: none;
 	}
+	.personal_info {
+		margin-inline: 0;
+	}
+	.personal_info h2 {
+		font-size: 2.1rem;
+	}
 }
 @keyframes fade {
 	0% {
