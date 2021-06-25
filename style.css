@@ -276,7 +276,7 @@ section {
 	width: 50%;
 	margin-left: 100px;
 	font-size: 1.2rem;
-	position: relative;
+	overflow: hidden;
 }
 .contact__info h2 {
 	font-size: 3rem;
@@ -285,12 +285,8 @@ section {
 	color: cyan;
 	margin-bottom: 30px;
 }
-.contact__info .sm_input {
-	width: 47%;
-	margin-right: 1%;
-}
 .contact__info input {
-	width: 96%;
+	width: 80%;
 	border: none;
 	outline: none;
 	background-color: #2b2b2b;
@@ -299,41 +295,31 @@ section {
 	height: 45px;
 }
 .label_name,
-.label_subject,
 .label_msg {
 	border-bottom: 2px solid cyan;
-	width: 96%;
+	width: 80%;
 	margin-bottom: 25px;
 	opacity: 0;
 	transform: translateX(-100%);
-	transition: .5s all ease;
+	transition: transform 0.3s ease;
 }
-.label_name--sm {
-	width: 47%;
-	margin-right: 1%;
-}
-.label_email {
-	transform: translateX(100%);
+.contact__info input:not(:required) + .label_name {
+	border: 2px solid red;
+	opacity: 1;
+	transform: translateX(0%);
 }
 
-/* .contact__info input[placeholder="Name"]:focus + .label_name {
-	opacity: 1;
-	transform: translateX(0%);
-} */
-/* .contact__info input[placeholder="Email"]:focus + .label_email {
-	opacity: 1;
-	transform: translateX(0%);
-} */
-.contact__info input[ placeholder="Subject"]:focus + .label_subject {
+.contact__info input:focus + .label_name {
 	opacity: 1;
 	transform: translateX(0%);
 }
+
 .contact__info textarea:focus + .label_msg {
 	opacity: 1;
 	transform: translateX(0%);
 }
 .contact__info textarea {
-	width: 96%;
+	width: 80%;
 	height: 200px;
 	background-color: #2b2b2b;
 	color: gray;
@@ -342,12 +328,17 @@ section {
 	outline: none;
 	padding: 15px;
 }
+.Btn--msg {
+	margin-left: 50%;
+	margin-bottom: 30px;
+}
+
 .contact__map {
 	width: 50%;
-	border: 1px solid blue;
 }
-.Btn--msg {
-	margin-left: 68%;
+.contact__map iframe {
+	width: 100%;
+	height: 100vh;
 }
 
 /* Responsive */
