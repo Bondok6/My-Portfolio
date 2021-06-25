@@ -5,6 +5,7 @@ const icons = document.querySelectorAll('.icons span');
 
 const clearActive = function() {
 	icons.forEach((icon) => {
+		icon.style.borderBottom = `none`;
 		icon.classList.remove('active');
 	});
 };
@@ -12,6 +13,7 @@ const clearActive = function() {
 icons.forEach((icon) => {
 	icon.addEventListener('click', () => {
 		clearActive();
+		icon.style.borderBottom = `2px solid cyan`;
 		icon.classList.add('active');
 	});
 });

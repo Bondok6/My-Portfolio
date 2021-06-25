@@ -16,7 +16,8 @@ body {
 ::selection {
 	all: unset;
 }
-a {
+a,
+a:hover {
 	all: unset;
 }
 
@@ -331,6 +332,7 @@ section {
 .Btn--msg {
 	margin-left: 50%;
 	margin-bottom: 30px;
+	letter-spacing: 2px;
 }
 
 .contact__map {
