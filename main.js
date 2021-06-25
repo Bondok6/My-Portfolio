@@ -22,7 +22,6 @@ const ctx = c.getContext('2d');
 
 const WIDTH = (c.width = window.innerWidth);
 const HEIGHT = (c.height = window.innerHeight);
-
 const mouse = {
 	x: 0,
 	y: 0,
@@ -80,20 +79,20 @@ Particle.prototype = {
 	}
 };
 
-const particles = [];
-const particle = null;
-const particleCount = 500;
-const tx = 0;
-const ty = HEIGHT / 2;
-const idx = 0;
-const temp = {
+let particles = [];
+let particle = null;
+let particleCount = 500;
+let tx = 0;
+let ty = HEIGHT / 2;
+let idx = 0;
+let temp = {
 	vx: Math.random() * 4 - 2,
 	vy: Math.random() * 4 - 2,
 	x: WIDTH / 2,
 	y: HEIGHT / 2
 };
 
-for (let i = 0; i < particleCount; i++) {
+for (var i = 0; i < particleCount; i++) {
 	particle = new Particle();
 	particles.push(particle);
 }
@@ -107,7 +106,7 @@ function spawn(target) {
 }
 
 c.addEventListener('mousemove', function(e) {
-	const rect = c.getBoundingClientRect();
+	let rect = c.getBoundingClientRect();
 	mouse.x = e.clientX - rect.left;
 	mouse.y = e.clientY - rect.top;
 	mouse.isMoved = true;
@@ -145,7 +144,7 @@ requestAnimationFrame(function loop() {
 		spawn(temp);
 	}
 
-	for (var i = 0; i < particleCount; i++) {
+	for (let i = 0; i < particleCount; i++) {
 		particle = particles[i];
 		particle.update();
 		particle.render(ctx);
@@ -153,7 +152,3 @@ requestAnimationFrame(function loop() {
 });
 
 // Contact Button
-const btn = document.querySelector('.contactBtn');
-btn.addEventListener('click', () => {
-	console.log('clicked');
-});
