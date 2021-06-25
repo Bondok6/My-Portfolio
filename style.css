@@ -337,6 +337,7 @@ section {
 	width: 50%;
 }
 .contact__map iframe {
+	display: block;
 	width: 100%;
 	height: 100vh;
 }
@@ -352,6 +353,14 @@ section {
 	}
 	.contact__map {
 		width: 100%;
+		margin-bottom: 30px;
+		margin-left: -10px;
+	}
+	.contact__map iframe {
+		display: block;
+		margin: 0 auto;
+		width: 80vw;
+		height: 50vh;
 	}
 }
 @media screen and (max-width: 650px) {
