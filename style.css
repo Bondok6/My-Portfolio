@@ -52,6 +52,7 @@ nav {
 .logo {
 	font-size: 3rem;
 	font-family: 'Roboto', sans-serif;
+	cursor: pointer;
 }
 
 .letterOne {
