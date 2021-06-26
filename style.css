@@ -24,6 +24,7 @@ html {
 body {
 	background-color: var(--bg-color);
 	font-family: 'Roboto', sans-serif;
+	overflow-x: hidden;
 }
 
 ::selection {
@@ -34,7 +35,7 @@ a:hover {
 	all: unset;
 }
 
-/* Start Side NavBar */
+/* ___________________________________________Start Side NavBar___________________________________ */
 nav {
 	position: fixed;
 	top: 0;
@@ -97,9 +98,9 @@ nav {
 	color: var(--cyan-color);
 	opacity: 1;
 }
-/* End Side NavBar */
+/* ______________________________________End Side NavBar_________________________________________ */
 
-/* Start Main Section */
+/* _____________________________________Start Main Section________________________________________ */
 canvas {
 	display: block;
 	position: absolute;
@@ -108,11 +109,7 @@ canvas {
 	transform: translate(-50%, -50%);
 }
 
-main {
-	height: 100vh;
-}
-
-section {
+#home {
 	height: 100vh;
 	border: 1px solid transparent;
 }
@@ -188,7 +185,7 @@ section {
 	font-weight: bolder;
 	font-family: 'Roboto', sans-serif;
 
-	color: var(--logo-olor);
+	color: var(--logo-color);
 
 	transform: rotate(336deg);
 
@@ -308,9 +305,159 @@ section {
 		transform: translatey(0);
 	}
 }
-/* End Main Section */
+/* __________________________________________End Home Section __________________________________________*/
 
-/* Start work section */
+/* _______________________________________Start About Section__________________________________________ */
+#about {
+	margin-top: 10px;
+	height: 100vh;
+	display: flex;
+	align-items: center;
+}
+
+.about {
+	width: 100%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.about__info {
+	width: 50%;
+}
+
+.about__info h2 {
+	font-size: 3.5rem;
+	font-family: 'Roboto', sans-serif;
+	letter-spacing: 5px;
+	text-transform: capitalize;
+
+	color: cyan;
+	margin-bottom: 30px;
+	font-style: italic;
+}
+
+.about__info h2::before {
+	content: '<h2>';
+	font-family: 'La Belle Aurore', cursive;
+	color: var(--tags-text-color);
+	font-size: 1.2rem;
+	position: absolute;
+	margin-top: -28px;
+	margin-left: -24px;
+	text-transform: lowercase;
+}
+
+.about__info h2::after {
+	content: '</h2>';
+	font-family: 'La Belle Aurore', cursive;
+	color: var(--tags-text-color);
+	font-size: 1.2rem;
+	position: absolute;
+	margin-top: 28px;
+	margin-left: 24px;
+	text-transform: lowercase;
+}
+
+.about__info p {
+	color: #fff;
+	font-size: 1.2rem;
+	letter-spacing: 1.5px;
+	padding-top: 30px;
+	line-height: 1.8;
+}
+
+.about__info p::before {
+	content: '<p>';
+	font-family: 'La Belle Aurore', cursive;
+	color: var(--tags-text-color);
+	font-size: 1.2rem;
+	position: absolute;
+	margin-top: -28px;
+	margin-left: -24px;
+}
+
+.about__info p::after {
+	content: '</p>';
+	font-family: 'La Belle Aurore', cursive;
+	color: var(--tags-text-color);
+	font-size: 1.2rem;
+	position: absolute;
+	margin-top: 28px;
+	margin-left: 24px;
+}
+
+.about__skills {
+	width: 50%;
+}
+
+#tag {
+	background-color: transparent;
+}
+
+@media screen and (max-width: 1000px) {
+	#about {
+		margin-top: 100px;
+		margin-bottom: 100px;
+	}
+	.about {
+		flex-direction: column;
+	}
+
+	.about__info {
+		width: 85%;
+	}
+
+	.about__skills {
+		width: 100%;
+	}
+}
+/* _____________________________________________End About Section __________________________________*/
+
+/* __________________________________________Start work section_____________________________________ */
+#work {
+	margin-bottom: 150px;
+}
+#work h2 {
+	font-size: 3.5rem;
+	font-family: 'Roboto', sans-serif;
+	letter-spacing: 5px;
+	text-transform: capitalize;
+
+	color: var(--cyan-color);
+	margin-bottom: 30px;
+	font-style: italic;
+}
+
+#work .work-text {
+	color: #fff;
+	font-size: 1.2rem;
+	letter-spacing: 1.5px;
+}
+
+#work .work-text::before {
+	content: '<p>';
+	font-family: 'La Belle Aurore', cursive;
+	color: var(--tags-text-color);
+	font-size: 1.2rem;
+	position: absolute;
+	margin-top: -28px;
+	margin-left: -24px;
+}
+#work .work-text::after {
+	content: '</p>';
+	font-family: 'La Belle Aurore', cursive;
+	color: var(--tags-text-color);
+	font-size: 1.2rem;
+	position: absolute;
+	margin-top: 28px;
+	margin-left: 24px;
+}
+#work .work-text a {
+	cursor: pointer;
+	color: var(--cyan-color);
+	text-decoration: underline;
+}
 .cards {
 	display: flex;
 	justify-content: space-between;
@@ -402,6 +549,15 @@ section {
 .card .face.face2 .content a:hover {
 	background: var(--bg-input-color);
 	color: var(--logo-color);
+}
+
+@media screen and (max-width: 768px) {
+	#work .work-text {
+		padding: 0 25px;
+	}
+	.cards {
+		justify-content: center;
+	}
 }
 /* End work section */
 

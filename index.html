@@ -21,10 +21,6 @@
 
         <link rel="stylesheet" href="style.css">
 
-        <style>
-
-
-        </style>
     </head>
 
     <body>
@@ -39,7 +35,7 @@
                 <div class="icons">
                     <a href="#home"><span class="material-icons">home</span></a>
                     <a href="#about"><span class="material-icons">account_circle</span></a>
-                    <a href="#skills"><span class="material-icons">emoji_events</span></a>
+                    <!-- <a href="#skills"><span class="material-icons">emoji_events</span></a> -->
                     <a href="#work"><span class="material-icons">visibility</span></a>
                     <a href="#contact"><span class="material-icons">mail_outline</span></a>
                 </div>
@@ -48,6 +44,7 @@
         </header>
 
         <main>
+
             <section id="home">
                 <span class="tag htmlTag"> &lt;html&gt; </span>
                 <span class="tag bodyTag"> &lt;body&gt; </span>
@@ -87,10 +84,32 @@
                 <canvas id="c"></canvas>
             </section>
 
-            <section id="about"></section>
-            <section id="skills"> </section>
+            <section id="about">
+                <div class="container">
+
+                    <div class="about">
+                        <div class="about__info">
+                            <h2>About Me</h2>
+                            <p>I am a senior student 👨‍🎓 in the faculty of computers and
+                                informatics Suez Canal University (SCU).
+                                Majored in computer science. I am interested in web development, espacially frontend
+                                track.</p>
+                        </div>
+                        <div class="about__skills">
+                            <div id="tag"></div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
             <section id="work">
                 <div class="container">
+                    <h2>my Work</h2>
+                    <p class="work-text">
+                        A small gallery of recent projects chosen by me. <br>
+                        For more projects, please <a href="https://github.com/Bondok6" target="_blank">visit</a> my
+                        Github
+                    </p>
                     <div class="cards">
                         <div class="card">
                             <div class="face face1">
@@ -211,6 +230,7 @@
                 </div>
 
             </section>
+
             <section id="contact">
                 <div class="constainer">
                     <div class="contact">
@@ -238,11 +258,11 @@
                 </div>
             </section>
 
-
         </main>
 
-
-        <script src="main.js"></script>
+        <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+        <script src='js/jquery.svg3dtagcloud.min.js'></script>
+        <script src="js/main.js"></script>
     </body>
 
 </html>

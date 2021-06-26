@@ -153,4 +153,40 @@ requestAnimationFrame(function loop() {
 	}
 });
 
-// Contact Button
+// Skills 3D animations
+$(document).ready(function() {
+	const entries = [
+		{ label: 'HTML' },
+		{ label: 'CSS' },
+		{ label: 'JavaScript' },
+		{ label: 'HTML5' },
+		{ label: 'CSS3' },
+		{ label: 'BEM' },
+		{ label: 'GIT' },
+		{ label: 'GITHUB' },
+		{ label: 'SAAS' },
+		{ label: 'PYTHON' },
+		{ label: 'React.js' },
+		{ label: 'OOP' }
+	];
+
+	const settings = {
+		entries: entries,
+		width: 640,
+		height: 480,
+		raduis: '65%',
+		raduisMin: 75,
+		bgDraw: true,
+		bgColor: '#1d1d1d',
+		opacityOver: 1.0,
+		opacityOut: 0.05,
+		opacitySpeed: 6,
+		fov: 800,
+		speed: 1.2,
+		fontFamily: 'Courier, Arial, sans-serif',
+		fontSize: '1.5rem',
+		fontColor: '#08fdd8'
+	};
+
+	$('#tag').svg3DTagCloud(settings);
+});
