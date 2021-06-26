@@ -326,21 +326,21 @@ section {
 	letter-spacing: 5px;
 	text-transform: capitalize;
 
-	color: cyan;
+	color: var(--cyan-olor);
 	margin-bottom: 30px;
 }
 .contact__info input {
 	width: 80%;
 	border: none;
 	outline: none;
-	background-color: #2b2b2b;
-	color: gray;
+	background-color: var(--bg-input-color);
+	color: var(--nav-text-color);
 	padding: 10px;
 	height: 45px;
 }
 .label_name,
 .label_msg {
-	border-bottom: 2px solid cyan;
+	border-bottom: 2px solid var(--cyan-olor);
 	width: 80%;
 	margin-bottom: 25px;
 	opacity: 0;
@@ -356,8 +356,8 @@ section {
 .contact__info textarea {
 	width: 80%;
 	height: 200px;
-	background-color: #2b2b2b;
-	color: gray;
+	background-color: var(--bg-input-color);
+	color: var(--nav-text-color);
 	border: none;
 	resize: none;
 	outline: none;
