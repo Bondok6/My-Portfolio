@@ -5,9 +5,13 @@
         <meta charset="UTF-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="icon" href="icon_logo.PNG">
         <title>My Portofolio</title>
 
         <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css">
+
+        <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" />
+
 
         <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 
@@ -16,6 +20,11 @@
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 
         <link rel="stylesheet" href="style.css">
+
+        <style>
+
+
+        </style>
     </head>
 
     <body>
@@ -38,7 +47,7 @@
 
         <main>
             <section id="home">
-
+                <span class="tag htmlTag"> &lt;html&gt; </span>
                 <span class="tag bodyTag"> &lt;body&gt; </span>
 
                 <div class="container">
@@ -60,9 +69,19 @@
                         <div id="alpha2">k</div>
                     </div>
 
+                    <div class="social_icons">
+                        <span> <a href="https://github.com/Bondok6" target="_blank"><i
+                                    class="fab fa-github-square"></i></a> </span>
+                        <span> <a href="https://www.linkedin.com/in/kyrillos-hany/" target="_blank"> <i
+                                    class="fab fa-linkedin"></i></a></span>
+                        <span> <a href="https://www.facebook.com/kyrillosbondok" target="_blank"><i
+                                    class="fab fa-facebook-square"></i></a> </span>
+
+                    </div>
                 </div>
 
                 <span class="tag bodyCloseTag">&lt;/body&gt;</span>
+                <span class="tag htmlCloseTag">&lt;/html&gt;</span>
                 <canvas id="c"></canvas>
             </section>
 
@@ -74,15 +93,16 @@
                     <div class="contact">
                         <div class="contact__info">
                             <h2>Contact me</h2>
-                            <input type="text" placeholder="Name" autocomplete="off" required>
-                            <label class="label_name "> </label>
-                            <input type="email" placeholder="Email" autocomplete="off" required>
-                            <label class="label_name"> </label>
-                            <input type="text" placeholder="Subject" autocomplete="off" required>
-                            <label class="label_name"> </label>
-                            <textarea placeholder="Message"></textarea>
-                            <label class="label_msg"> </label>
-
+                            <form id="contact" autocomplete="off">
+                                <input type="text" placeholder="Name" required>
+                                <label class="label_name "> </label>
+                                <input type="email" placeholder="Email" required>
+                                <label class="label_name"> </label>
+                                <input type="text" placeholder="Subject" required>
+                                <label class="label_name"> </label>
+                                <textarea placeholder="Message"></textarea>
+                                <label class="label_msg"> </label>
+                            </form>
                             <button class="Btn Btn--msg"> Send Message </button>
                         </div>
                         <div class="contact__map">

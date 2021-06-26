@@ -1,8 +1,20 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@900&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Caveat&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=La+Belle+Aurore&display=swap');
 
 * {
 	box-sizing: border-box;
+}
+
+:root {
+	--bg-color: #1d1d1d;
+	--bg-nav-color: #181818;
+	--bg-input-color: #2b2b2b;
+
+	--nav-text-color: #909096;
+	--tags-text-color: #515152;
+
+	--cyan-olor: #08fdd8;
+	--logo-olor: #fd2155;
 }
 
 html {
@@ -10,7 +22,7 @@ html {
 }
 
 body {
-	background-color: #222;
+	background-color: var(--bg-color);
 }
 
 ::selection {
@@ -30,7 +42,7 @@ nav {
 
 	min-width: 60px;
 	min-height: 100%;
-	background-color: #1a1a1a;
+	background-color: var(--bg-nav-color);
 
 	display: flex;
 	flex-direction: column;
@@ -43,14 +55,14 @@ nav {
 }
 
 .letterOne {
-	color: cyan;
+	color: var(--cyan-olor);
 	position: absolute;
 	left: 15px;
 	transform: rotate(340deg);
 }
 
 .letterTwo {
-	color: rgb(241, 75, 103);
+	color: var(--logo-olor);
 	position: absolute;
 	left: 20px;
 	transform: rotate(340deg);
@@ -67,7 +79,7 @@ nav {
 }
 
 .material-icons {
-	color: gray;
+	color: var(--nav-text-color);
 	opacity: .5;
 	font-size: 1.8rem;
 	cursor: pointer;
@@ -75,12 +87,12 @@ nav {
 }
 
 .material-icons:hover {
-	color: cyan;
+	color: var(--cyan-olor);
 	opacity: 1;
 }
 
 .active {
-	color: cyan;
+	color: var(--cyan-olor);
 	opacity: 1;
 }
 /* End Side NavBar */
@@ -118,11 +130,11 @@ section {
 }
 
 .personal_info .letter_one {
-	color: cyan;
+	color: var(--cyan-olor);
 }
 
 .personal_info .letter_two {
-	color: rgb(241, 75, 103);
+	color: var(--logo-olor);
 	position: relative;
 	left: -28px;
 }
@@ -134,9 +146,9 @@ section {
 .Btn {
 	outline: none;
 	background-color: transparent;
-	border: 1px solid cyan;
+	border: 1px solid var(--cyan-olor);
 	border-radius: 4px;
-	color: cyan;
+	color: var(--cyan-olor);
 
 	padding: 5px 15px;
 	margin-top: 35px;
@@ -148,7 +160,7 @@ section {
 	z-index: 1;
 }
 .Btn a {
-	color: cyan;
+	color: var(--cyan-olor);
 	font-size: 1rem;
 	text-transform: uppercase;
 	letter-spacing: 2px;
@@ -159,7 +171,7 @@ section {
 	font-weight: bolder;
 	font-family: 'Roboto', sans-serif;
 
-	color: cyan;
+	color: var(--cyan-olor);
 
 	transform: rotate(336deg);
 
@@ -174,7 +186,7 @@ section {
 	font-weight: bolder;
 	font-family: 'Roboto', sans-serif;
 
-	color: rgb(241, 75, 103);
+	color: var(--logo-olor);
 
 	transform: rotate(336deg);
 
@@ -184,13 +196,37 @@ section {
 
 	animation: fade linear 3s;
 }
+.social_icons {
+	margin-top: 30px;
+	display: flex;
+	justify-content: center;
+}
+
+.social_icons span {
+	margin-right: 20px;
+	font-size: 3rem;
+	cursor: pointer;
+	z-index: 1;
+}
+
+.social_icons .fab {
+	color: var(--tags-text-color);
+	transition: .4s;
+}
+
+.social_icons .fab:hover {
+	color: cyan;
+}
 
 .tag {
-	color: gray;
-	opacity: .3;
-	font-family: 'Caveat', cursive;
-	font-size: 1.5rem;
+	font-family: 'La Belle Aurore', cursive;
+	font-size: 1.2rem;
+	color: var(--tags-text-color);
 	position: absolute;
+}
+.htmlTag {
+	top: 25px;
+	left: 80px;
 }
 
 .bodyTag {
@@ -199,7 +235,7 @@ section {
 }
 
 .h1Tag {
-	top: 140px;
+	top: 150px;
 }
 
 .h1CloseTag {
@@ -209,6 +245,11 @@ section {
 .bodyCloseTag {
 	top: 80vh;
 	left: 100px;
+}
+
+.htmlCloseTag {
+	top: 85vh;
+	left: 80px;
 }
 
 @media screen and (max-width: 1200px) {
@@ -280,9 +321,11 @@ section {
 	overflow: hidden;
 }
 .contact__info h2 {
-	font-size: 3rem;
+	font-size: 3.5rem;
 	font-family: 'Roboto', sans-serif;
-	letter-spacing: 2px;
+	letter-spacing: 5px;
+	text-transform: capitalize;
+
 	color: cyan;
 	margin-bottom: 30px;
 }
@@ -304,21 +347,12 @@ section {
 	transform: translateX(-100%);
 	transition: transform 0.3s ease;
 }
-.contact__info input:not(:required) + .label_name {
-	border: 2px solid red;
-	opacity: 1;
-	transform: translateX(0%);
-}
 
 .contact__info input:focus + .label_name {
 	opacity: 1;
 	transform: translateX(0%);
 }
 
-.contact__info textarea:focus + .label_msg {
-	opacity: 1;
-	transform: translateX(0%);
-}
 .contact__info textarea {
 	width: 80%;
 	height: 200px;
@@ -329,8 +363,15 @@ section {
 	outline: none;
 	padding: 15px;
 }
+
+.contact__info textarea:focus + .label_msg {
+	opacity: 1;
+	transform: translateX(0%);
+}
+
 .Btn--msg {
-	margin-left: 50%;
+	margin-top: 0px;
+	margin-left: 45%;
 	margin-bottom: 30px;
 	letter-spacing: 2px;
 }
