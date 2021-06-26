@@ -13,8 +13,8 @@
 	--nav-text-color: #909096;
 	--tags-text-color: #515152;
 
-	--cyan-olor: #08fdd8;
-	--logo-olor: #fd2155;
+	--cyan-color: #08fdd8;
+	--logo-color: #fd2155;
 }
 
 html {
@@ -23,6 +23,7 @@ html {
 
 body {
 	background-color: var(--bg-color);
+	font-family: 'Roboto', sans-serif;
 }
 
 ::selection {
@@ -56,14 +57,14 @@ nav {
 }
 
 .letterOne {
-	color: var(--cyan-olor);
+	color: var(--cyan-color);
 	position: absolute;
 	left: 15px;
 	transform: rotate(340deg);
 }
 
 .letterTwo {
-	color: var(--logo-olor);
+	color: var(--logo-color);
 	position: absolute;
 	left: 20px;
 	transform: rotate(340deg);
@@ -88,12 +89,12 @@ nav {
 }
 
 .material-icons:hover {
-	color: var(--cyan-olor);
+	color: var(--cyan-color);
 	opacity: 1;
 }
 
 .active {
-	color: var(--cyan-olor);
+	color: var(--cyan-color);
 	opacity: 1;
 }
 /* End Side NavBar */
@@ -131,11 +132,11 @@ section {
 }
 
 .personal_info .letter_one {
-	color: var(--cyan-olor);
+	color: var(--cyan-color);
 }
 
 .personal_info .letter_two {
-	color: var(--logo-olor);
+	color: var(--logo-color);
 	position: relative;
 	left: -28px;
 }
@@ -147,9 +148,9 @@ section {
 .Btn {
 	outline: none;
 	background-color: transparent;
-	border: 1px solid var(--cyan-olor);
+	border: 1px solid var(--cyan-color);
 	border-radius: 4px;
-	color: var(--cyan-olor);
+	color: var(--cyan-color);
 
 	padding: 5px 15px;
 	margin-top: 35px;
@@ -161,7 +162,7 @@ section {
 	z-index: 1;
 }
 .Btn a {
-	color: var(--cyan-olor);
+	color: var(--cyan-color);
 	font-size: 1rem;
 	text-transform: uppercase;
 	letter-spacing: 2px;
@@ -172,7 +173,7 @@ section {
 	font-weight: bolder;
 	font-family: 'Roboto', sans-serif;
 
-	color: var(--cyan-olor);
+	color: var(--cyan-color);
 
 	transform: rotate(336deg);
 
@@ -308,12 +309,109 @@ section {
 	}
 }
 /* End Main Section */
+
+/* Start work section */
+.cards {
+	display: flex;
+	justify-content: space-between;
+	flex-wrap: wrap;
+}
+.card {
+	border: none;
+	cursor: pointer;
+	background-color: transparent;
+}
+
+.card .face {
+	width: 300px;
+	height: 200px;
+	transition: 0.5s;
+}
+
+.card .face.face1 {
+	position: relative;
+	background: var(--bg-input-color);
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	z-index: 1;
+	transform: translateY(100px);
+}
+
+.card:hover .face.face1 {
+	background: var(--logo-color);
+	transform: translateY(0);
+}
+
+.card .face.face1 .content {
+	opacity: 0.2;
+	transition: 0.5s;
+}
+
+.card:hover .face.face1 .content {
+	opacity: 1;
+}
+
+.card .face.face1 .content img {
+	max-width: 100%;
+}
+
+.card .face.face1 .content h3 {
+	margin: 10px 0 0;
+	padding: 0;
+	color: #fff;
+	text-align: center;
+	font-size: 1.5em;
+}
+
+.card .face.face2 {
+	position: relative;
+	background: #fff;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	padding: 20px;
+	box-sizing: border-box;
+	box-shadow: 0 20px 50px rgba(0, 0, 0, 0.8);
+	transform: translateY(-100px);
+}
+
+.card:hover .face.face2 {
+	transform: translateY(0);
+}
+
+.card .face.face2 .content p {
+	margin: 0;
+	padding: 0;
+	color: var(--bg-input-color);
+}
+
+.card .face.face2 .content .btnCard {
+	margin: 15px 10px 0 0;
+	display: inline-block;
+	text-decoration: none;
+	font-weight: 900;
+	letter-spacing: 1px;
+	color: var(--bg-input-color);
+	background-color: var(--logo-color);
+	padding: 5px 15px;
+	border-radius: 7px;
+	transition: .4s;
+}
+
+.card .face.face2 .content a:hover {
+	background: var(--bg-input-color);
+	color: var(--logo-color);
+}
+/* End work section */
+
 /* Start contact me */
 .contact {
 	display: flex;
 	width: 100%;
 	justify-content: center;
 	align-items: center;
+	margin-top: 150px;
 }
 .contact__info {
 	width: 50%;
@@ -327,7 +425,7 @@ section {
 	letter-spacing: 5px;
 	text-transform: capitalize;
 
-	color: var(--cyan-olor);
+	color: var(--cyan-color);
 	margin-bottom: 30px;
 }
 .contact__info input {
@@ -341,7 +439,7 @@ section {
 }
 .label_name,
 .label_msg {
-	border-bottom: 2px solid var(--cyan-olor);
+	border-bottom: 2px solid var(--cyan-color);
 	width: 80%;
 	margin-bottom: 25px;
 	opacity: 0;
