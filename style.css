@@ -559,9 +559,9 @@ canvas {
 		justify-content: center;
 	}
 }
-/* End work section */
+/* _________________________________End work section____________________________________ */
 
-/* Start contact me */
+/* _________________________________Start contact me_________________________________ */
 .contact {
 	display: flex;
 	width: 100%;
@@ -669,4 +669,4 @@ canvas {
 		width: 80%;
 	}
 }
-/* End contact me */
+/* ______________________________End contact me_________________________________ */
