@@ -162,12 +162,16 @@ $(document).ready(function() {
 		{ label: 'HTML5' },
 		{ label: 'CSS3' },
 		{ label: 'BEM' },
-		{ label: 'GIT' },
-		{ label: 'GITHUB' },
-		{ label: 'SAAS' },
-		{ label: 'PYTHON' },
+		{ label: 'Git' },
+		{ label: 'Github' },
+		{ label: 'SASS' },
+		{ label: 'Python' },
 		{ label: 'React.js' },
-		{ label: 'OOP' }
+		{ label: 'OOP' },
+		{ label: 'JSON' },
+		{ label: 'ES5/ES6' },
+		{ label: 'npm' },
+		{ label: 'Ajax' }
 	];
 
 	const settings = {
