@@ -21,6 +21,11 @@
 
         <link rel="stylesheet" href="style.css">
 
+        <style>
+
+
+        </style>
+
     </head>
 
     <body>
@@ -238,17 +243,19 @@
                     <div class="contact">
                         <div class="contact__info">
                             <h2>Contact me</h2>
-                            <form id="contact" autocomplete="off">
-                                <input type="text" placeholder="Name" required>
+                            <form id="my-form" autocomplete="off" action="https://formspree.io/f/mwkaqvde"
+                                method="POST">
+                                <input type="text" name="name" placeholder="Name" required>
                                 <label class="label_name "> </label>
-                                <input type="email" placeholder="Email" required>
+                                <input type="email" name="email" placeholder="Email" required>
                                 <label class="label_name"> </label>
-                                <input type="text" placeholder="Subject" required>
+                                <input type="text" name="subject" placeholder="Subject" required>
                                 <label class="label_name"> </label>
-                                <textarea placeholder="Message"></textarea>
+                                <textarea name="message" placeholder="Message"></textarea>
                                 <label class="label_msg"> </label>
+                                <button class="Btn Btn--msg" type="submit"> Send Message </button>
                             </form>
-                            <button class="Btn Btn--msg"> Send Message </button>
+                            <div id="status"></div>
                         </div>
                         <div class="contact__map">
                             <iframe

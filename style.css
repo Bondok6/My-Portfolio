@@ -584,6 +584,50 @@ canvas {
 	color: var(--cyan-color);
 	margin-bottom: 30px;
 }
+
+.contact__info h2::before {
+	content: '<h2>';
+	font-family: 'La Belle Aurore', cursive;
+	color: var(--tags-text-color);
+	font-size: 1.2rem;
+	position: absolute;
+	margin-top: -20px;
+	margin-left: -24px;
+	text-transform: lowercase;
+}
+
+.contact__info h2::after {
+	content: '</h2>';
+	font-family: 'La Belle Aurore', cursive;
+	color: var(--tags-text-color);
+	font-size: 1.2rem;
+	position: absolute;
+	margin-top: 28px;
+	margin-left: 24px;
+	text-transform: lowercase;
+}
+
+#my-form::before {
+	content: '<form>';
+	font-family: 'La Belle Aurore', cursive;
+	color: var(--tags-text-color);
+	font-size: 1.3rem;
+	position: absolute;
+	margin-top: -28px;
+	margin-left: -24px;
+	text-transform: lowercase;
+}
+#my-form::after {
+	content: '</form>';
+	font-family: 'La Belle Aurore', cursive;
+	color: var(--tags-text-color);
+	font-size: 1.3rem;
+	display: block;
+	position: absolute;
+	margin-top: -100px;
+	margin-left: -18px;
+	text-transform: lowercase;
+}
 .contact__info input {
 	width: 80%;
 	border: none;
@@ -640,6 +684,44 @@ canvas {
 	height: 100vh;
 }
 
+#status {
+	position: relative;
+	top: -60px;
+	width: 200px;
+	height: 65px;
+	border-radius: 7px;
+	padding: 5px;
+	text-align: center;
+	font-style: italic;
+}
+
+.success {
+	background-color: var(--cyan-color);
+	color: #000;
+	animation: status 4s ease forwards;
+}
+.error {
+	background-color: var(--logo-color);
+	color: #fff;
+	animation: status 4s ease forwards;
+}
+
+@keyframes status {
+	0% {
+		opacity: 1;
+		pointer-events: all;
+	}
+
+	90% {
+		opacity: 1;
+		pointer-events: all;
+	}
+
+	100% {
+		opacity: 0;
+		pointer-events: none;
+	}
+}
 /* Responsive */
 @media screen and (max-width: 1000px) {
 	.contact {
