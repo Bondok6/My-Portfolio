@@ -220,3 +220,17 @@ async function handleSubmit(event) {
 		});
 }
 form.addEventListener('submit', handleSubmit);
+// Scroll animation
+const scrollAnimation = function() {
+	window.addEventListener('scroll', () => {
+		const content = document.querySelector('.about__info');
+		let contentPos = content.getBoundingClientRect().top;
+		let screenPos = window.innerHeight;
+		if (contentPos < screenPos) {
+			content.classList.add('about_scroll');
+		} else {
+			content.classList.remove('about_scroll');
+		}
+	});
+};
+scrollAnimation();

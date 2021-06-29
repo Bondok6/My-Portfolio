@@ -324,6 +324,13 @@ canvas {
 
 .about__info {
 	width: 50%;
+	opacity: 0;
+	transform: scale(0.1);
+	transition: all 1s ease-in-out;
+}
+.about_scroll {
+	opacity: 1;
+	transform: scale(1);
 }
 
 .about__info h2 {
@@ -412,6 +419,7 @@ canvas {
 		width: 100%;
 	}
 }
+
 /* _____________________________________________End About Section __________________________________*/
 
 /* __________________________________________Start work section_____________________________________ */
