@@ -171,7 +171,8 @@ $(document).ready(function() {
 		{ label: 'JSON' },
 		{ label: 'ES5/ES6' },
 		{ label: 'npm' },
-		{ label: 'Ajax' }
+		{ label: 'Ajax' },
+		{ label: 'Figma' }
 	];
 
 	const settings = {
@@ -234,3 +235,27 @@ const scrollAnimation = function() {
 	});
 };
 scrollAnimation();
+// The Sound
+const soundBtn = document.querySelector('#sound span');
+const soundLogo = document.querySelector('path');
+const sound = new Audio();
+sound.src = '../sound.mp3';
+
+const turnOnSound = function() {
+	soundBtn.textContent = 'ON';
+	soundBtn.style.color = '#08fdd8';
+	soundLogo.style.fill = '#08fdd8';
+	sound.play();
+};
+const turnOffSound = function() {
+	soundBtn.textContent = 'OFF';
+	soundBtn.style.color = '#fd1056';
+	soundLogo.style.fill = '#fd1056';
+	sound.pause();
+};
+const theSound = function() {
+	soundBtn.addEventListener('click', () => {
+		soundBtn.textContent == 'ON' ? turnOffSound() : turnOnSound();
+	});
+};
+theSound();
