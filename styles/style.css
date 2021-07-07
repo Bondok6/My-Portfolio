@@ -30,10 +30,12 @@ body {
 ::selection {
 	all: unset;
 }
+
 a,
 a:hover {
 	all: unset;
 }
+
 /* _________________________Start Sound__________________________*/
 #sound {
 	position: fixed;
@@ -69,9 +71,9 @@ a:hover {
 	cursor: pointer;
 	font-size: .9rem;
 }
-
 /* _________________________End Sound_____________________________ */
-/* ___________________________________________Start Side NavBar___________________________________ */
+
+/* _________________________Start Side NavBar_____________________ */
 nav {
 	position: fixed;
 	top: 0;
@@ -134,9 +136,9 @@ nav {
 	color: var(--cyan-color);
 	opacity: 1;
 }
-/* ______________________________________End Side NavBar_________________________________________ */
+/* ____________________End Side NavBar______________________ */
 
-/* _____________________________________Start Main Section________________________________________ */
+/* _________________Start Main Section______________________ */
 canvas {
 	display: block;
 	position: absolute;
@@ -308,6 +310,10 @@ canvas {
 	}
 	.personal_info {
 		margin-inline: 0;
+		display: flex;
+		justify-self: center;
+		align-items: center;
+		flex-direction: column;
 	}
 	.personal_info h2 {
 		font-size: 2.1rem;
@@ -341,9 +347,9 @@ canvas {
 		transform: translatey(0);
 	}
 }
-/* __________________________________________End Home Section __________________________________________*/
+/* ____________________End Home Section ______________________*/
 
-/* _______________________________________Start About Section__________________________________________ */
+/* ___________________Start About Section____________________ */
 #about {
 	margin-top: 10px;
 	height: 100vh;
@@ -456,9 +462,9 @@ canvas {
 	}
 }
 
-/* _____________________________________________End About Section __________________________________*/
+/* ____________________End About Section _________________________*/
 
-/* __________________________________________Start work section_____________________________________ */
+/* _______________________Start work section_____________________ */
 #work {
 	margin-bottom: 150px;
 }
@@ -603,9 +609,9 @@ canvas {
 		justify-content: center;
 	}
 }
-/* _________________________________End work section____________________________________ */
+/* _________________End work section____________________ */
 
-/* _________________________________Start contact me_________________________________ */
+/* ________________Start contact me_____________________ */
 .contact {
 	display: flex;
 	width: 100%;
@@ -795,4 +801,4 @@ canvas {
 		width: 80%;
 	}
 }
-/* ______________________________End contact me_________________________________ */
+/* __________________End contact me____________________ */
