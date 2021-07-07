@@ -797,6 +797,9 @@ canvas {
 	.contact {
 		margin: 0;
 	}
+	.contact__info h2 {
+		font-size: 2rem;
+	}
 	.contact__info .sm_input {
 		width: 80%;
 	}
