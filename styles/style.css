@@ -452,9 +452,14 @@ canvas {
 	.about__info {
 		width: 85%;
 	}
-
 	.about__skills {
 		width: 100%;
+	}
+}
+
+@media screen and (max-width: 600px) {
+	.about__info h2{
+		font-size: 2rem;
 	}
 }
 
@@ -603,6 +608,11 @@ canvas {
 	}
 	.cards {
 		justify-content: center;
+	}
+}
+@media screen and (max-width: 500px){
+	#work h2{
+		font-size: 2rem;
 	}
 }
 /* _________________End work section____________________ */
@@ -794,7 +804,7 @@ canvas {
 		margin: 0;
 	}
 	.contact__info h2 {
-		font-size: 2.5rem;
+		font-size: 2rem;
 	}
 	.contact__info .sm_input {
 		width: 80%;
