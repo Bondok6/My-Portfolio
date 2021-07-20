@@ -240,7 +240,7 @@ scrollAnimation();
 const soundBtn = document.querySelector('#sound span');
 const soundLogo = document.querySelector('path');
 const sound = new Audio();
-sound.src = '../sound.mp3';
+sound.src = '../audio/sound.mp3';
 
 const turnOnSound = function() {
 	soundBtn.textContent = 'ON';
