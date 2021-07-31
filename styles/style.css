@@ -19,7 +19,30 @@
 
 html {
 	scroll-behavior: smooth;
+	scrollbar-width: normal;
+	scrollbar-color: #777 #555;
 }
+
+html::-webkit-scrollbar {
+	width: 2vw;
+}
+
+html::-webkit-scrollbar-thumb {
+	background-color: #7775;
+}
+
+html::-webkit-scrollbar-thumb:hover {
+	background-color: #777;
+}
+
+html::-webkit-scrollbar-track {
+	background-color: var(--bg-nav-color);
+}
+
+html::-webkit-scrollbar-track:hover {
+	background-color: var(--bg-input-color);
+}
+
 
 body {
 	background-color: var(--bg-color);
