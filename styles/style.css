@@ -43,7 +43,6 @@ html::-webkit-scrollbar-track:hover {
 	background-color: var(--bg-input-color);
 }
 
-
 body {
 	background-color: var(--bg-color);
 	font-family: 'Roboto', sans-serif;
@@ -485,7 +484,6 @@ canvas {
 		font-size: 2rem;
 	}
 }
-
 /* ____________________End About Section _________________________*/
 
 /* _______________________Start work section_____________________ */
