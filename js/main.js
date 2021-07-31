@@ -237,10 +237,11 @@ const scrollAnimation = function() {
 scrollAnimation();
 
 // The Sound
+
 const soundBtn = document.querySelector('#sound span');
 const soundLogo = document.querySelector('path');
 const sound = new Audio();
-sound.src = '../audio/sound.mp3';
+sound.setAttribute('src','../audio/sound.mp3');
 
 const turnOnSound = function() {
 	soundBtn.textContent = 'ON';
@@ -248,12 +249,14 @@ const turnOnSound = function() {
 	soundLogo.style.fill = '#08fdd8';
 	sound.play();
 };
+
 const turnOffSound = function() {
 	soundBtn.textContent = 'OFF';
 	soundBtn.style.color = '#fd1056';
 	soundLogo.style.fill = '#fd1056';
 	sound.pause();
 };
+
 const theSound = function() {
 	soundBtn.addEventListener('click', () => {
 		soundBtn.textContent == 'ON' ? turnOffSound() : turnOnSound();
