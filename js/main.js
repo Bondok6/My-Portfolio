@@ -260,3 +260,17 @@ const theSound = function() {
 	});
 };
 theSound();
+
+
+// Disable inspect element
+
+// Disable Right Click
+document.addEventListener('contextmenu', e => e.preventDefault());
+
+// Disable keyboard
+document.onkeydown = function (e) {
+	if (e.code == 'F12') return false;
+	if (e.ctrlKey && e.shiftKey && e.code === "KeyI") return false;
+	if (e.ctrlKey && e.shiftKey && e.code == "KeyJ") return false;
+	if (e.ctrlKey && e.code == "KeyU") return false;
+}
