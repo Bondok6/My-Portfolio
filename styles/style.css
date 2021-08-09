@@ -149,7 +149,8 @@ nav {
 	transition: .7s;
 }
 
-.material-icons:hover {
+.material-icons:hover,
+.material-icons:focus {
 	color: var(--cyan-color);
 	opacity: 1;
 }
