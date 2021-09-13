@@ -5,6 +5,10 @@
 
 ![image preview](imgs/Preview.PNG)
 
+## Live Demo
+
+[Live Demo Link](https://bondok6.github.io/My-Portfolio/)
+
 
 ## Built with
 
@@ -20,7 +24,3 @@
 - Bootstrap4
 - Google Fonts
 - Font Awesome
-
-## Live Demo
-
-[Live Demo Link](https://bondok6.github.io/My-Portfolio/)
