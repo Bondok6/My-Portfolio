@@ -1,6 +1,19 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@900&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=La+Belle+Aurore&display=swap');
 
+	/* .img-logo{
+		position: absolute;
+		right: 0px;
+		top: 0px;
+	}
+	.img-logo img{
+		width: 1200px;
+	}
+	.text-icon{
+		width: 50px;
+		transform: rotate(340deg);
+	} */
+
 * {
 	box-sizing: border-box;
 }
