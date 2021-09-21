@@ -827,7 +827,7 @@ canvas {
   }
   #map {
     width: 85%;
-    height: 80vw;
+    max-height: 80vh;
     margin-bottom: 30px;
   }
 }
