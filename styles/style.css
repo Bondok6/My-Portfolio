@@ -232,7 +232,7 @@ canvas {
 
   position: relative;
   z-index: 1;
-  width: 155px;
+  width: 160px;
 }
 .Btn a {
   color: var(--cyan-color);
@@ -771,6 +771,7 @@ canvas {
   margin-left: 45%;
   margin-bottom: 30px;
   letter-spacing: 2px;
+  width: 200px;
 }
 
 #map {
