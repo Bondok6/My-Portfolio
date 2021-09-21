@@ -268,7 +268,7 @@ theSound();
 // Disable inspect element
 
 // Disable Right Click
-document.addEventListener("contextmenu", (e) => e.preventDefault());
+// document.addEventListener("contextmenu", (e) => e.preventDefault());
 
 // Disable keyboard
 document.onkeydown = function (e) {

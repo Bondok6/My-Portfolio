@@ -225,12 +225,14 @@ canvas {
 
   padding: 5px 15px;
   margin-top: 35px;
+  margin-right: 10px;
 
   box-shadow: 5px 5px 10px #000;
   animation: fadeInBottom linear 3s;
 
   position: relative;
   z-index: 1;
+  width: 155px;
 }
 .Btn a {
   color: var(--cyan-color);
@@ -349,6 +351,11 @@ canvas {
   }
   .personal_info h2 {
     font-size: 2.1rem;
+  }
+  .Btn--resume {
+    display: block;
+    margin: 0;
+    margin-top: 10px;
   }
 }
 @keyframes fade {
