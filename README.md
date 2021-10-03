@@ -1,6 +1,6 @@
 # _My Portfolio_
 
-> ### This is a website that exemplifies my skills, projects, qualifications, education, training, and experiences.
+> ### This is a website that exemplifies my skills, projects, qualifications, education, training, experiences, and resume.
 
 ![image preview](imgs/Preview.PNG)
 
