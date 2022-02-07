@@ -163,6 +163,7 @@ $(document).ready(function () {
     { label: "HTML5" },
     { label: "CSS3" },
     { label: "BEM" },
+
     { label: "Git" },
     { label: "Github" },
     { label: "SASS" },
