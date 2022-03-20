@@ -1,5 +1,5 @@
-@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@900&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=La+Belle+Aurore&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=La+Belle+Aurore&display=swap');
 
 /* .img-logo{
 		position: absolute;
@@ -58,7 +58,7 @@ html::-webkit-scrollbar-track:hover {
 
 body {
   background-color: var(--bg-color);
-  font-family: "Roboto", sans-serif;
+  font-family: 'Roboto', sans-serif;
   overflow-x: hidden;
 }
 
@@ -126,7 +126,7 @@ nav {
 
 .logo {
   font-size: 3rem;
-  font-family: "Roboto", sans-serif;
+  font-family: 'Roboto', sans-serif;
   cursor: pointer;
 }
 
@@ -196,7 +196,7 @@ canvas {
 
 .personal_info h2 {
   font-size: 3rem;
-  font-family: "Roboto", sans-serif;
+  font-family: 'Roboto', sans-serif;
   letter-spacing: 2px;
 
   animation: fadeInLeft linear 3s;
@@ -244,7 +244,7 @@ canvas {
 #alpha1 {
   font-size: 750px;
   font-weight: bolder;
-  font-family: "Roboto", sans-serif;
+  font-family: 'Roboto', sans-serif;
 
   color: var(--cyan-color);
 
@@ -259,7 +259,7 @@ canvas {
 #alpha2 {
   font-size: 750px;
   font-weight: bolder;
-  font-family: "Roboto", sans-serif;
+  font-family: 'Roboto', sans-serif;
 
   color: var(--logo-color);
 
@@ -294,7 +294,7 @@ canvas {
 }
 
 .tag {
-  font-family: "La Belle Aurore", cursive;
+  font-family: 'La Belle Aurore', cursive;
   font-size: 1.2rem;
   color: var(--tags-text-color);
   position: absolute;
@@ -416,7 +416,7 @@ canvas {
 
 .about__info h2 {
   font-size: 3.5rem;
-  font-family: "Roboto", sans-serif;
+  font-family: 'Roboto', sans-serif;
   letter-spacing: 5px;
   text-transform: capitalize;
 
@@ -426,8 +426,8 @@ canvas {
 }
 
 .about__info h2::before {
-  content: "<h2>";
-  font-family: "La Belle Aurore", cursive;
+  content: '<h2>';
+  font-family: 'La Belle Aurore', cursive;
   color: var(--tags-text-color);
   font-size: 1.2rem;
   position: absolute;
@@ -437,8 +437,8 @@ canvas {
 }
 
 .about__info h2::after {
-  content: "</h2>";
-  font-family: "La Belle Aurore", cursive;
+  content: '</h2>';
+  font-family: 'La Belle Aurore', cursive;
   color: var(--tags-text-color);
   font-size: 1.2rem;
   position: absolute;
@@ -456,8 +456,8 @@ canvas {
 }
 
 .about__info p::before {
-  content: "<p>";
-  font-family: "La Belle Aurore", cursive;
+  content: '<p>';
+  font-family: 'La Belle Aurore', cursive;
   color: var(--tags-text-color);
   font-size: 1.2rem;
   position: absolute;
@@ -466,8 +466,8 @@ canvas {
 }
 
 .about__info p::after {
-  content: "</p>";
-  font-family: "La Belle Aurore", cursive;
+  content: '</p>';
+  font-family: 'La Belle Aurore', cursive;
   color: var(--tags-text-color);
   font-size: 1.2rem;
   position: absolute;
@@ -513,7 +513,7 @@ canvas {
 }
 #work h2 {
   font-size: 3.5rem;
-  font-family: "Roboto", sans-serif;
+  font-family: 'Roboto', sans-serif;
   letter-spacing: 5px;
   text-transform: capitalize;
 
@@ -529,8 +529,8 @@ canvas {
 }
 
 #work .work-text::before {
-  content: "<p>";
-  font-family: "La Belle Aurore", cursive;
+  content: '<p>';
+  font-family: 'La Belle Aurore', cursive;
   color: var(--tags-text-color);
   font-size: 1.2rem;
   position: absolute;
@@ -538,8 +538,8 @@ canvas {
   margin-left: -24px;
 }
 #work .work-text::after {
-  content: "</p>";
-  font-family: "La Belle Aurore", cursive;
+  content: '</p>';
+  font-family: 'La Belle Aurore', cursive;
   color: var(--tags-text-color);
   font-size: 1.2rem;
   position: absolute;
@@ -594,6 +594,7 @@ canvas {
 
 .card .face.face1 .content img {
   max-width: 100%;
+  height: 150px;
 }
 
 .card .face.face1 .content h3 {
@@ -675,7 +676,7 @@ canvas {
 }
 .contact__info h2 {
   font-size: 3.5rem;
-  font-family: "Roboto", sans-serif;
+  font-family: 'Roboto', sans-serif;
   letter-spacing: 5px;
   text-transform: capitalize;
 
@@ -684,8 +685,8 @@ canvas {
 }
 
 .contact__info h2::before {
-  content: "<h2>";
-  font-family: "La Belle Aurore", cursive;
+  content: '<h2>';
+  font-family: 'La Belle Aurore', cursive;
   color: var(--tags-text-color);
   font-size: 1.2rem;
   position: absolute;
@@ -695,8 +696,8 @@ canvas {
 }
 
 .contact__info h2::after {
-  content: "</h2>";
-  font-family: "La Belle Aurore", cursive;
+  content: '</h2>';
+  font-family: 'La Belle Aurore', cursive;
   color: var(--tags-text-color);
   font-size: 1.2rem;
   position: absolute;
@@ -706,8 +707,8 @@ canvas {
 }
 
 #my-form::before {
-  content: "<form>";
-  font-family: "La Belle Aurore", cursive;
+  content: '<form>';
+  font-family: 'La Belle Aurore', cursive;
   color: var(--tags-text-color);
   font-size: 1.3rem;
   position: absolute;
@@ -716,8 +717,8 @@ canvas {
   text-transform: lowercase;
 }
 #my-form::after {
-  content: "</form>";
-  font-family: "La Belle Aurore", cursive;
+  content: '</form>';
+  font-family: 'La Belle Aurore', cursive;
   color: var(--tags-text-color);
   font-size: 1.3rem;
   display: block;
