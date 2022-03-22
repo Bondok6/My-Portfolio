@@ -2,7 +2,7 @@
 
 > ### This is a website that exemplifies my skills, projects, qualifications, education, training, experiences, and resume.
 
-![image preview](imgs/Preview.PNG)
+https://user-images.githubusercontent.com/45231276/159453633-b270f73f-b0a0-4c7e-b2fb-f34e2fd4fb8e.mp4
 
 ## Live Demo
 
