@@ -61,14 +61,14 @@ const projects = [
     live: 'https://bondok6.github.io/Awesome-Books/',
     github: 'https://github.com/Bondok6/Awesome-Books',
   },
-  // {
-  //   img: '../imgs/countries.PNG',
-  //   title: 'Countries',
-  //   description:
-  //     'search for any country that you want to know information about. Build with RestCountry API, javaScript, CSS, HTML',
-  //   live: 'https://bondok6.github.io/countries/',
-  //   github: 'https://github.com/Bondok6/countries/',
-  // },
+  {
+    img: '../imgs/countries.PNG',
+    title: 'Countries',
+    description:
+      'search for any country that you want to know information about. Build with RestCountry API, javaScript, CSS, HTML',
+    live: 'https://bondok6.github.io/countries/',
+    github: 'https://github.com/Bondok6/countries/',
+  },
   {
     img: '../imgs/mapty-app.PNG',
     title: 'Mapty App',
@@ -117,12 +117,12 @@ const projects = [
     live: 'https://qalby-etma2n.herokuapp.com/',
     github: 'https://github.com/Bondok6/qalby_etmaa-n',
   },
-  // {
-  //   img: '../imgs/guessGame.PNG',
-  //   title: 'Guess My Number',
-  //   description:
-  //     'Simple Game, Try to guess a number from 1 to 20 in the fewest number of attempts possible',
-  //   live: 'https://bondok6.github.io/Guess-My-Number/',
-  //   github: 'https://github.com/Bondok6/Guess-My-Number',
-  // },
+  {
+    img: '../imgs/guessGame.PNG',
+    title: 'Guess My Number',
+    description:
+      'Simple Game, Try to guess a number from 1 to 20 in the fewest number of attempts possible',
+    live: 'https://bondok6.github.io/Guess-My-Number/',
+    github: 'https://github.com/Bondok6/Guess-My-Number',
+  },
 ];

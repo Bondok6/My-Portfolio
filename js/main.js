@@ -303,7 +303,7 @@ L.marker(coords).addTo(map).bindPopup('Hi, I am here 👋').openPopup();
 // My Projects
 const projects = [
   {
-    img: 'imgs/worldData.png',
+    img: '../imgs/worldData.png',
     title: 'World Data',
     description:
       'A web application that provides information about each country in the world. The App is based on an external API that allows users to filter these countries by selecting a specific country.',
@@ -311,7 +311,7 @@ const projects = [
     github: 'https://github.com/Bondok6/world-data',
   },
   {
-    img: 'imgs/taste-food.png',
+    img: '../imgs/taste-food.png',
     title: 'Taste Food',
     description:
       'Taste food is a web application based on an external food API, showing data about foods and we used Used involvement API to record the different user interactions (likes, comments).',
@@ -319,7 +319,7 @@ const projects = [
     github: 'https://github.com/Bondok6/taste-food/',
   },
   {
-    img: 'imgs/todo-list.png',
+    img: '../imgs/todo-list.png',
     title: 'Todo List',
     description:
       'In this project, I built a simple To-Do App for managing the daily tasks and to keep track on tasks during the day.',
@@ -327,7 +327,7 @@ const projects = [
     github: 'https://github.com/Bondok6/ToDo-List/',
   },
   {
-    img: 'imgs/space-travelers.png',
+    img: '../imgs/space-travelers.png',
     title: 'Space Travelers',
     description:
       'A web app that provides commercial and scientific space travel services. The app allows users to book rockets and join selected space missions using real live data from the SpaceX API.',
@@ -335,13 +335,13 @@ const projects = [
     github: 'https://github.com/Bondok6/space-travelers',
   },
   {
-    img: 'imgs/natours.png',
+    img: '../imgs/natours.png',
     title: 'Natours',
     live: 'https://bondok6.github.io/Natours/',
     github: 'https://github.com/Bondok6/Natours',
   },
   {
-    img: 'imgs/math-magicians.png',
+    img: '../imgs/math-magicians.png',
     title: 'Math Magicians',
     description:
       'A website for all fans of mathematics. It is a React.js project that allows users to make simple calculations and read a random math-related quote.',
@@ -349,7 +349,7 @@ const projects = [
     github: 'https://github.com/Bondok6/math-magicians',
   },
   {
-    img: 'imgs/Leaderboard.png',
+    img: '../imgs/Leaderboard.png',
     title: 'Leaderboard',
     description:
       'A website displays scores submitted by different players. All data is preserved thanks to the external Leaderboard API.',
@@ -357,7 +357,7 @@ const projects = [
     github: 'https://github.com/Bondok6/Leaderboard/',
   },
   {
-    img: 'imgs/green-travel.png',
+    img: '../imgs/green-travel.png',
     title: 'Green Travel',
     description:
       'This is a website for tourism and traveling around the world, exploring the world, and offering exciting tours for adventurers.',
@@ -365,7 +365,7 @@ const projects = [
     github: 'https://github.com/Bondok6/Green-Travel',
   },
   {
-    img: 'imgs/awesome-books.png',
+    img: '../imgs/awesome-books.png',
     title: 'Awesome Books',
     description:
       'In this project, I built a basic website that allows users to add/remove books from a book list.',
@@ -373,15 +373,7 @@ const projects = [
     github: 'https://github.com/Bondok6/Awesome-Books',
   },
   {
-    img: 'imgs/countries.png',
-    title: 'Countries',
-    description:
-      'search for any country that you want to know information about. Build with RestCountry API, javaScript, CSS, HTML',
-    live: 'https://bondok6.github.io/countries/',
-    github: 'https://github.com/Bondok6/countries/',
-  },
-  {
-    img: 'imgs/mapty-app.png',
+    img: '../imgs/mapty-app.png',
     title: 'Mapty App',
     description:
       'In this app, you can log your running or cycling workouts with location,distance, time, and steps/minute. You can also see all your workouts on a map.',
@@ -389,7 +381,7 @@ const projects = [
     github: 'https://github.com/Bondok6/Mapty-app',
   },
   {
-    img: 'imgs/pigGame.png',
+    img: '../imgs/pigGame.png',
     title: 'Pig Game',
     description:
       'Dice Game. Each turn, a player repeatedly rolls a die until either a 1 is rolled or the player decides to "hold". Go to Github to read more...',
@@ -397,7 +389,7 @@ const projects = [
     github: 'https://github.com/Bondok6/Pig-Game',
   },
   {
-    img: 'imgs/Bankist.png',
+    img: '../imgs/Bankist.png',
     title: 'Bankist',
     description:
       'A beautiful website with a lot of different components and visual effects that require some pretty advanced DOM manipulation techniques.',
@@ -405,7 +397,7 @@ const projects = [
     github: 'https://github.com/Bondok6/Bankist',
   },
   {
-    img: 'imgs/expense-tracker.png',
+    img: '../imgs/expense-tracker.png',
     title: 'Expense Tracker',
     description:
       'App helps you manage your money on the go. By understanding what you spend money on and how much you spend, you can see exactly where your cash is going.',
@@ -413,7 +405,7 @@ const projects = [
     github: 'https://github.com/Bondok6/Expense-tracker-app',
   },
   {
-    img: 'imgs/zenva.png',
+    img: '../imgs/zenva.png',
     title: 'Zenva',
     description:
       'A website for Zenva, a company that provides a variety of services to the people of the world.',
@@ -421,20 +413,12 @@ const projects = [
     github: 'https://github.com/Bondok6/ZENVA',
   },
   {
-    img: 'imgs/qualby.jpg',
+    img: '../imgs/qualby.jpg',
     title: 'Qualby Etmaa`n',
     description:
       'Qualby_Etmaa`n, A website to display episodes of a famous Arabic program shown on YouTube',
     live: 'https://qalby-etma2n.herokuapp.com/',
     github: 'https://github.com/Bondok6/qalby_etmaa-n',
-  },
-  {
-    img: 'imgs/guessGame.png',
-    title: 'Guess My Number',
-    description:
-      'Simple Game, Try to guess a number from 1 to 20 in the fewest number of attempts possible',
-    live: 'https://bondok6.github.io/Guess-My-Number/',
-    github: 'https://github.com/Bondok6/Guess-My-Number',
   },
 ];
 
