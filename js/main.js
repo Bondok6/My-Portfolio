@@ -248,7 +248,6 @@ const scrollAnimation = function () {
 scrollAnimation();
 
 // The Sound
-
 const soundBtn = document.querySelector('#sound span');
 const soundLogo = document.querySelector('path');
 const sound = new Audio();
@@ -303,12 +302,12 @@ L.marker(coords).addTo(map).bindPopup('Hi, I am here 👋').openPopup();
 // My Projects
 const projects = [
   {
-    img: '../imgs/worldData.PNG',
-    title: 'World Data',
+    img: '../imgs/reservify.PNG',
+    title: 'Reservify',
     description:
-      'A web application that provides information about each country in the world. The App is based on an external API that allows users to filter these countries by selecting a specific country.',
-    live: 'https://bondok-world-data.herokuapp.com/',
-    github: 'https://github.com/Bondok6/world-data',
+      'A hotel reservation Full-Stack APP displays all the existing hotels and details of each hotel, allowing the user to reserve the hotel they want. Ruby on Rails, PostgreSQL, and React.js.',
+    live: 'https://reservify.netlify.app/',
+    github: 'https://github.com/Bondok6/Reservify',
   },
   {
     img: '../imgs/taste-food.PNG',
@@ -317,6 +316,30 @@ const projects = [
       'Taste food is a web application based on an external food API, showing data about foods and we used Used involvement API to record the different user interactions (likes, comments).',
     live: 'https://bondok6.github.io/Taste-Food/',
     github: 'https://github.com/Bondok6/taste-food/',
+  },
+  {
+    img: '../imgs/budget.PNG',
+    title: 'Budget App',
+    description:
+      'A mobile web application where you can manage your budget: you have a list of transactions associated with a category, so that you can manage your budget. Built with Ruby on Rails and PostgreSQL.',
+    live: 'https://kb-budge-appp.herokuapp.com/',
+    github: 'https://github.com/Bondok6/budget-app',
+  },
+  {
+    img: '../imgs/recipes.PNG',
+    title: 'Recipe App',
+    description:
+      'Keeps track of all your recipes and ingredients. It will allow you to save ingredients, keep track of what you have, create recipes, and generate a shopping list. Built with Ruby on Rails and PostgreSQL.',
+    live: 'https://github.com/Bondok6/recipe-app',
+    github: 'https://kyramrecipes.herokuapp.com/',
+  },
+  {
+    img: '../imgs/worldData.PNG',
+    title: 'World Data',
+    description:
+      'A web application that provides information about each country in the world. The App is based on an external API that allows users to filter these countries by selecting a specific country.',
+    live: 'https://bondok-world-data.herokuapp.com/',
+    github: 'https://github.com/Bondok6/world-data',
   },
   {
     img: '../imgs/todo-list.PNG',
@@ -337,6 +360,8 @@ const projects = [
   {
     img: '../imgs/natours.PNG',
     title: 'Natours',
+    description:
+      'A website about nature tours, Built with pure CSS to practice the latest advanced CSS and SASS features.',
     live: 'https://bondok6.github.io/Natours/',
     github: 'https://github.com/Bondok6/Natours',
   },
