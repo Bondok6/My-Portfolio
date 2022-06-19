@@ -6,7 +6,7 @@ https://user-images.githubusercontent.com/45231276/159456319-6fe135f9-dbfd-4493-
 
 ## Live Demo
 
-> ### Check my portofolio : [Live Demo Link](https://bondok6.github.io/My-Portfolio/)
+> ### Check my portofolio : [Live Demo Link](https://kyrillos-portfolio.netlify.app/)
 
 ## Built with
 
